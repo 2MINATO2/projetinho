@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js" defer></script>
+    <script src="https://kit.fontawesome.com/92ca6584c7.js" crossorigin="anonymous" defer></script>
+    <title>Menu do Pinterest</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu">
+                <img src="logo.png" width="120px">
+
+                <button type="button" onclick="terceira('1')"class="botao click">Página inicial</button>
+
+                <button type="button" onclick="terceira('2')"class="botao segunda">Explorar</button>
+
+                <div class="seleçao" onclick="primeiro()">
+
+                    <span>Criar</span><i class="fa-solid fa-chevron-down"></i>
+                    <div class="opçao">
+                        <span>Cria Ideal Pin</span>
+                        <span>Criar Pin</span>
+                    </div>
+
+                </div>
+                <div class="campo">
+                    <i id="pes" class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" class="tex" placeholder="Pesquise" onclick="segundo()" onblur="res()">
+                </div>
+                <div class="bola">
+                    <i onmouseout="tira()" onmouseover="letras('1')" onclick="toco()" class="fa-solid fa-bell bolinha"></i>
+                    <i onmouseout="tira()" onmouseover="letras('2')" class="fa-solid fa-message bolinha"></i>
+                    <span onmouseout="tira()" onmouseover="letras('3')" class="bolinha">H</span>
+                    <span onmouseout="tira()" onmouseover="letras('4')" onclick="con()"><i class="fa-solid fa-chevron-down rola"></i></span>
+                    <span id="sino" class="lembrete sino no">Notificação</span>
+                    <span id="mens" class="lembrete mens no">Mensagem</span>
+                    <span id="perf" class="lembrete perf no">Seu Perfil</span>
+                    <span id="mais" class="lembrete mais no">Contas <br> e mais <br> opções</span>
+                    <div class="notifica no">
+                        <span>Atualizações</span>
+                        <ul>
+                            <li>Comteudo</li>
+                            <li>Novidades</li>
+                            <li>Exemplos</li>
+                        </ul>
+                    </div>
+                    <div class="conta no">
+                        <span>
+                            <ul>
+                                <li>Hugo Emanuel</li>
+                                <li>Pessoal</li>
+                                <li>exemplo@gamil.com</li>
+                            </ul>
+                        </span>
+                        <ul class="aqui">
+                            <li>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, esse asperiores repudiandae quos provident minima nemo ipsam, quaerat placeat mollitia error facilis veniam neque! Debitis a earum possimus ea officia!</p>
+                            </li>
+                            <li>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, esse asperiores repudiandae quos provident minima nemo ipsam, quaerat placeat mollitia error facilis veniam neque! Debitis a earum possimus ea officia!</p>
+                            </li>
+                            <li>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, esse asperiores repudiandae quos provident minima nemo ipsam, quaerat placeat mollitia error facilis veniam neque! Debitis a earum possimus ea officia!</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+</body>
+</html>

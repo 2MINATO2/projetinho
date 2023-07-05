@@ -1,0 +1,238 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --cor1: #ddd;
+    --cor2: #d0d0d0;
+    --cor3: #767676;
+    --cor4: #828282;
+    --cor5: #878787;
+    --cor6: #111;
+    --cor7: #000;
+}
+body{
+    background-color: whitesmoke;
+}
+nav{
+    width: 100%;
+    height: 14vh;
+    background-color: rgba(243, 238, 238, 0.637);
+    position: absolute;
+}
+.menu{
+    position: relative;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+img{
+    cursor: pointer;
+}
+.botao{
+    padding: 20px 30px;
+    font-size: 1.1rem;
+    background-color: rgba(243, 238, 238, 0.637);
+    border: none;
+    cursor: pointer;
+}
+.click{
+    border-radius: 2rem;
+    color: white;
+    background-color: #111;
+    border: none;
+}
+.seleçao{
+    display: flex;
+    font-size: 1.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 7px;
+    width: 80px;
+    font-weight: 200;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-around;
+}
+.opçao{
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    width: 140px;
+    border-radius: 1rem;
+    transform: translateY(70px);
+}
+.opiçao{
+    display: flex;
+}
+.opçao > span{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+    width: 150px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.opçao > span:hover{
+    background-color: rgba(221, 218, 218, 0.452);
+}
+.campo{
+    display: flex;
+    width: 600px;
+    height: 9vh;
+    background-color: var(--cor1);
+    border-radius: 2rem;
+}
+.campo i {
+    display: flex;
+    width: 5%;
+    align-items: center;
+    justify-content: center;
+}
+.tex{
+    width: 95%;
+    border-radius: 0 2rem 2rem 0;
+    font-size: 1.5rem;
+    padding-left: 15px;
+    border: none;
+    background-color: var(--cor1);
+}
+.texto{
+    width: 100%;
+    border-radius: 2rem;
+}
+.bola{
+    width: 200px;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bolinha{
+    padding: 15px;
+}
+.bolinha:hover{
+    background-color: var(--cor1);
+    padding: 15px;
+    border-radius: 50%;
+}
+.rola{
+    padding: 3px;
+}
+.rola:hover{
+    background-color: var(--cor1);
+    padding: 3px;
+    border-radius: 50%;
+}
+.lembrete{
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    padding: 10px;
+    font-size: 0.8rem;
+    background-color: #111;
+    border-radius: 10px;
+    color: white;
+}
+.sino{
+    transform: translate(-17px ,45px);
+    z-index: 1;
+}
+.mens{
+    transform: translate(43px ,45px);
+    z-index: 1;
+}
+.perf{
+    transform: translate(107px ,45px);
+    z-index: 1;
+}
+.mais{
+    transform: translate(159px ,47px);
+    z-index: 1;
+}
+.no{
+    display: none;
+}
+.si{
+    display: block;
+}
+.notifica{
+    width: 367px;
+    background-color: white;
+    position: absolute;
+    transform: translate(-170px ,185px);
+    border-radius: 1rem;
+}
+.notifica span{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    border-radius: 1rem 1rem 0 0;
+    background-color: white;
+}
+.notifica ul{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+.notifica ul li{
+    list-style-type: none;
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+    height: 50px;
+    border-radius: 1rem;
+    padding-left: 10px;
+}
+.notifica ul li:hover{
+    background-color: rgba(102, 100, 100, 0.212);
+}
+.conta{
+    position: absolute;
+    width: 270px;
+    height: 300px;
+    background-color: white;
+    transform: translate(-100px ,115px);
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    border-radius: 1rem 0 0 0;
+}
+.conta span{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem 1rem 0 0;
+    background-color: white;
+
+}
+.conta ul{
+    margin-top: 20px;
+}
+.conta ul li{
+    list-style-type: none;
+}
+.aqui{
+    padding: 1rem;
+    width: 100%;
+    text-align: justify;
+}
+.aqui li{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.aqui li :hover{
+    background-color: #82828246;
+}
+.aqui p {
+    padding: 12px;
+}
+
